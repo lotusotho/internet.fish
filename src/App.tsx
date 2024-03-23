@@ -35,7 +35,6 @@ const ClickHandler = () => {
                 <p>You have <span className="main-title-page-featured">fished</span> {ChangeScore(score)} times!</p>
 
             </div>
-                //<p className="made-by">Made with ❤️ by Lotusotho</p>
         </>
     )
 }
