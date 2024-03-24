@@ -129,6 +129,7 @@ body {
 
         -webkit-transform: translate3d(0,0,0);
         shape-rendering: "geometricPrecision";
+        -webkit-tap-highlight-color: transparent;
     }
 
     .main-fish>p {
