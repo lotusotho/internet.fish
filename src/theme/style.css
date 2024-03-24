@@ -126,6 +126,9 @@ body {
     .main-fish>a {
         font-size: 50vw;
         animation: rotate 20s backwards linear infinite;
+
+        -webkit-transform: translate3d(0,0,0);
+        shape-rendering: "geometricPrecision";
     }
 
     .main-fish>p {
