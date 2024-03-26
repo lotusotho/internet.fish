@@ -17,11 +17,11 @@ const ClickHandler = () => {
 
     const [play] = useSound(popUrl, { playbackRate: 1.0 });
 
-    
+
     useEffect(() => {
         setScore(parseInt(localStorage.getItem("fishScore") ?? "0"));
     }, [])
-    
+
     return (
         <>
             <div className="main-fish">
@@ -40,9 +40,17 @@ const ClickHandler = () => {
 }
 
 function ChangeScore(score: number) {
-    return (
-        <div key={score} className="main-fish-score">
-            {score}
-        </div>
-    )
+    if (score % 1000 === 0) {
+        return (
+            <div key={score} className="main-fish-highscore">
+                {score}
+            </div>
+        )
+    } else {
+        return (
+            <div key={score} className="main-fish-score">
+                {score}
+            </div>
+        )
+    }
 }
