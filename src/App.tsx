@@ -40,7 +40,7 @@ const ClickHandler = () => {
 }
 
 function ChangeScore(score: number) {
-    if (score % 1000 === 0) {
+    if (score !== 0 && score % 100 === 0) {
         return (
             <div key={score} className="main-fish-highscore">
                 {score}
